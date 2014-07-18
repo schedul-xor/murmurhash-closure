@@ -1,0 +1,26 @@
+{
+  "name": "murmurhash-closure",
+  "version": "1.0.0",
+  "description": "An optimized JavaScript implementation of the MurmurHash algorithms.",
+  "scripts": {
+    "start": "node tasks/serve.js",
+    "test": "node tasks/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/openlayers/ol3.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schedul-xor/murmurhash-closure/issues"
+  },
+  "dependencies": {
+    "async": "~0.2.10",
+    "closure-util": "0.19.0",
+    "nomnom": "~1.6.2"
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1",
+    "mocha": "~1.20.1"
+  }
+}
