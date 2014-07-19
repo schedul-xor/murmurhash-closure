@@ -8,3 +8,4 @@ before_script:
 
 script:
   - "find test | grep '.test.js$' | xargs mocha -R tap"
+  - 'node tasks/build.js buildcfg/config.json mh.min.js'
