@@ -1,4 +1,4 @@
-require('nclosure').nclosure({additionalDeps:['/home/xor/local/m/p/w/schedul/net/murmurhash-closure/deps.js']});
+require('nclosure').nclosure({additionalDeps:['deps.js']});
 expect = require('expect.js');
 
 goog.require('garycourt.MurmurHash');
