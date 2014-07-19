@@ -5,7 +5,7 @@ goog.require('goog.asserts');
 
 
 /**
- * @classdesc Murmur hash
+ * @description Murmur hash
  * @author gary.court@gmail.com (Gary Court)
  * @see http://github.com/garycourt/murmurhash-js
  * @author aappleby@gmail.com (Austin Appleby)

@@ -1,3 +1,9 @@
+require('nclosure').nclosure({additionalDeps:['/home/xor/local/m/p/w/schedul/net/murmurhash-closure/deps.js']});
+expect = require('expect.js');
+
+goog.require('garycourt.MurmurHash');
+goog.provide('garycourt.MurmurHash.test');
+
 describe('garycourt.MurmurHash',function(){
   it('should return hash 3297245870 for string "saitama"',function(){
     // 'saitama' => [ 0, 115, 0, 97, 0, 105, 0, 116, 0, 97, 0, 109, 0, 97 ]
