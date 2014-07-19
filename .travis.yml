@@ -4,7 +4,7 @@ before_install:
   - "npm install -g npm && npm install"
 
 before_script:
-  - 'node_modules/nclosure/third_party/closure-library/closure/bin/build/depswriter.py "--root_with_prefix=src/ ../../../../../../src" "--root_with_prefix=examples/ ../../../../../../examples" "--root_with_prefix=node_modules/nclosure/lib/third_party/node ../../../../lib/third_party/node"'
+  - 'python node_modules/nclosure/third_party/closure-library/closure/bin/build/depswriter.py "--root_with_prefix=src/ ../../../../../../src" "--root_with_prefix=examples/ ../../../../../../examples" "--root_with_prefix=node_modules/nclosure/lib/third_party/node ../../../../lib/third_party/node"'
 
 script:
   - "mocha test/garycourt/murmurhash.test.js"
