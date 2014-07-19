@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/openlayers/ol3.git"
+    "url": "git://github.com/schedul-xor/murmurhash-closure.git"
   },
   "license": "MIT",
   "bugs": {
