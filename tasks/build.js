@@ -224,7 +224,7 @@ if (require.main === module) {
     loglevel: {
       abbr: 'l',
       choices: ['silly', 'verbose', 'info', 'warn', 'error'],
-      default: 'silly',
+      default: 'info',
       help: 'Log level',
       metavar: 'LEVEL'
     }
