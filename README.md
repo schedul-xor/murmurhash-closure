@@ -36,6 +36,7 @@ node tasks/build.js buildcfg/config.json mh.min.js
 TODOs
 -----
 * Linter
+* Generate JSDoc
 
 Thanks
 ----------
