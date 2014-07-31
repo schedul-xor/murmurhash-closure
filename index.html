@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Murmurhash-closure by schedul-xor</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Murmurhash-closure</h1>
+        <p>Porting Murmur-hash ( https://github.com/garycourt/murmurhash-js )</p>
+
+        <p class="view"><a href="https://github.com/schedul-xor/murmurhash-closure">View the Project on GitHub <small>schedul-xor/murmurhash-closure</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/schedul-xor/murmurhash-closure/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/schedul-xor/murmurhash-closure/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/schedul-xor/murmurhash-closure">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="murmurhash-closure" class="anchor" href="#murmurhash-closure"><span class="octicon octicon-link"></span></a>murmurhash-closure</h1>
+
+<p><a href="https://travis-ci.org/schedul-xor/murmurhash-closure"><img src="https://travis-ci.org/schedul-xor/murmurhash-closure.svg?branch=master" alt="Build Status"></a></p>
+
+<p>This is a ported <a href="https://github.com/garycourt/murmurhash-js">garycourt/murmurhash-js</a> with Travis CI and Google Closure Compiler support.</p>
+
+<h2>
+<a name="how-to-build-and-run" class="anchor" href="#how-to-build-and-run"><span class="octicon octicon-link"></span></a>How to build and run</h2>
+
+<p>Install required node modules and build deps.js.</p>
+
+<pre><code>npm install -g npm &amp;&amp; npm install
+python node_modules/nclosure/third_party/closure-library/closure/bin/build/depswriter.py \
+  "--root_with_prefix=src/ ../../../../../../src" \
+  "--root_with_prefix=examples/ ../../../../../../examples" \
+  "--root_with_prefix=node_modules/nclosure/lib/third_party/node ../../../../lib/third_party/node" 
+&gt; deps.js
+</code></pre>
+
+<p>Run example server (deps.js required)</p>
+
+<p>It will start listening port 3000, launch your web browser and set URI to http://localhost:3000/</p>
+
+<pre><code>node tasks/serve.js
+</code></pre>
+
+<p>Run unit test.</p>
+
+<pre><code>find test | grep '.test.js$' | xargs mocha -R tap
+</code></pre>
+
+<p>Build compressed version.</p>
+
+<pre><code>node tasks/build.js buildcfg/config.json mh.min.js
+</code></pre>
+
+<h2>
+<a name="todos" class="anchor" href="#todos"><span class="octicon octicon-link"></span></a>TODOs</h2>
+
+<ul>
+<li>Linter</li>
+<li>Generate JSDoc</li>
+</ul><h2>
+<a name="thanks" class="anchor" href="#thanks"><span class="octicon octicon-link"></span></a>Thanks</h2>
+
+<ul>
+<li>
+<a href="https://github.com/garycourt">Gary Court</a> (developer of the original version)</li>
+<li>
+<a href="https://github.com/openlayers">OpenLayers developers</a> (borrowed lots and lots of node scripts they'd developed to make Closure developing easier)</li>
+<li>Austin Appleby (designer of Murmur Hash)</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/schedul-xor">schedul-xor</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
