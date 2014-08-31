@@ -5,7 +5,7 @@ goog.require('goog.asserts');
 
 
 /**
- * @description Murmur hash
+ * Murmur hash class.
  * @author gary.court@gmail.com (Gary Court)
  * @see http://github.com/garycourt/murmurhash-js
  * @author aappleby@gmail.com (Austin Appleby)
@@ -80,6 +80,7 @@ garycourt.MurmurHash.prototype.mh3forInt32s = function(int32s, seed) {
  * JS Implementation of MurmurHash3 (r136) (as of May 20, 2011)
  *
  * @private
+ * @param {!number} seed Positive integer only
  * @return {!number} 32-bit positive integer hash
  */
 garycourt.MurmurHash.prototype.calculateMh3_ = function(seed) {
