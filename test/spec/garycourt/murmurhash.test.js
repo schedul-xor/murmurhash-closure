@@ -1,7 +1,4 @@
-require('nclosure').nclosure({additionalDeps:['deps.js']});
-expect = require('expect.js');
-
-goog.require('garycourt.MurmurHash');
+goog.provide('garycourt.MurmurHash.test');
 
 describe('garycourt.MurmurHash',function(){
   it('should return hash 3297245870 for string "saitama"',function(){
@@ -25,3 +22,5 @@ describe('garycourt.MurmurHash',function(){
     expect(h).to.be(2764721058);
   });
 });
+
+goog.require('garycourt.MurmurHash');

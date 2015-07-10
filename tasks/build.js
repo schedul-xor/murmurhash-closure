@@ -120,7 +120,7 @@ function getDependencies(config, exports, callback) {
       callback(err);
       return;
     }
-    log.info('murmurhash', 'Parsing dependencies');
+    log.info('qt', 'Parsing dependencies');
     var options;
     if (config.src) {
       options = {
@@ -178,11 +178,11 @@ function build(config, paths, callback) {
     jvm: config.jvm
   };
   if (!options.compile) {
-    log.info('murmurhash', 'No compile options found.  Concatenating ' +
+    log.info('qt', 'No compile options found.  Concatenating ' +
         paths.length + ' sources');
     concatenate(paths, callback);
   } else {
-    log.info('murmurhash', 'Compiling ' + paths.length + ' sources');
+    log.info('qt', 'Compiling ' + paths.length + ' sources');
     options.compile.js = paths.concat(options.compile.js || []);
     closure.compile(options, callback);
   }

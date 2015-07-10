@@ -1,9 +1,8 @@
 {
-  "exports": ["*"],
-  "src":["src/**/*.js", "examples/murmurhash.js"],
+    "exports": ["*"],
+    "src":["src/**/*.js","examples/plain.js"],
   "compile": {
-    "externs": [
-    ],
+    "externs": [],
     "define": [
       "goog.DEBUG=false"
     ],
@@ -20,6 +19,7 @@
       "deprecated",
       "duplicateMessage",
       "es3",
+      "es5Strict",
       "externsValidation",
       "fileoverviewTags",
       "globalThis",
@@ -42,11 +42,14 @@
       "uselessCode",
       "visibility"
     ],
-    "jscomp_off": [
-      "es5Strict"
+    "extra_annotation_name": [
+      "api", "observable"
     ],
     "compilation_level": "ADVANCED",
+    "warning_level": "VERBOSE",
     "use_types_for_optimization": true,
-    "manage_closure_dependencies": true
+    "manage_closure_dependencies": true,
+    "create_source_map": "build/binary-parser.js.map",
+    "source_map_format": "V3"
   }
 }
