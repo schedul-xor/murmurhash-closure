@@ -1,6 +1,6 @@
 {
     "exports": ["*"],
-    "src":["src/**/*.js","examples/plain.js"],
+    "src":["src/**/*.js","examples/murmurhash.js"],
   "compile": {
     "externs": [],
     "define": [
