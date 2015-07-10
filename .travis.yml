@@ -8,6 +8,6 @@ before_install:
 
 script:
   - "mkdir build"
-  - "node tasks/generate-requires.js test/spec/**/*.js > build/test_requires.js"
+  - "node tasks/generate-requires.js `find test/spec | grep \.js$` > build/test_requires.js"
   - "node tasks/test.js"
   - "node tasks/build.js config/murmurhash.json build/murmurhash.min.js"
